@@ -1,0 +1,11 @@
+name: Build APK
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build com Buildozer
+        uses: ArtemSerebryakov/buildozer-action@v1
+        with:
+          save_buildozer_cache: true
