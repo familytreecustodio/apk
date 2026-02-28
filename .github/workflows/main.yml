@@ -1,4 +1,4 @@
-nname: Build APK
+name: Build APK
 on: [push]
 jobs:
   build:
@@ -6,6 +6,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Build with Buildozer
-        uses: Ente-AI/Buildozer-Action@v1
+        uses: kivy/buildozer-action@v1
         with:
-          buildozer_version: stable
+          save_buildozer_cache: true
