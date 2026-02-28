@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Build with Buildozer
-        uses: Ente-AI/Buildozer-Action@v1
+      - name: Buildozer Action
+        uses: kivy/buildozer-action@v1.2.4
         with:
-          buildozer_version: stable
+          save_buildozer_cache: true
