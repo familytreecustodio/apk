@@ -6,6 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Buildozer Action
-        uses: Ente-AI/Buildozer-Action@v1.2.1
+        uses: kivy/buildozer-action@v1
         with:
+          save_buildozer_cache: true
           buildozer_version: stable
